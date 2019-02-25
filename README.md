@@ -18,6 +18,10 @@ Simply, include `qKit.js` in the main html file
 <script src="qKit.js"></script>
 ```
 
+## **Running the Examples**
+In the `index.html` file, comment/uncomment the desired example to run it.
+You can view all code examples in the examples directory, or you can go through the README here.
+
 ## **Start `qKit`**
 
 ```
