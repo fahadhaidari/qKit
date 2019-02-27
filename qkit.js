@@ -649,11 +649,12 @@ const qKit = (function() {
     },
     collision: {
       // collision needs to respect forces added to
-      // x and y axis for more accurate collision result
       test: function(o1, o2) {
-        return o1.x + o1.width > o2.x && o1.x < o2.x + o2.width
-          &&
-          o1.y + o1.height > o2.y && o1.y < o2.y + o2.height;
+        if (o1.x + o1.width < o2.x || o1.x > o2.x + o2.width ||
+          o1.y + o1.height < o2.y || o1.y > o2.y + o2.height) {
+            return false;
+          }
+          return true;
       }
     },
     groups: function(name) {
