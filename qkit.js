@@ -85,9 +85,7 @@ const qKit = (function() {
   });
 
   document.body.addEventListener('keyup', (e) => {
-    keyUp({
-      key: e.keyCode,
-    });
+    keyUp(e.keyCode);
   });
 
   const sortBy = p => (a, b) => a[p] - b[p]; // layering views based on z axis
