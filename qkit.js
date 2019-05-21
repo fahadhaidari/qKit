@@ -235,7 +235,7 @@ const qKit = (function() {
     };
     this.getRight = function() {
       return {
-        x: this.x + this.width / 2,
+        x: this.x + this.width,
         y: this.y + this.height / 2
       }
     };
